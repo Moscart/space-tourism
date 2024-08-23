@@ -7,7 +7,9 @@ import { Separator } from "@/components/ui/separator";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 
-export default function Template({ children }: { children: React.ReactNode }) {
+export default function Template({
+  children,
+}: Readonly<{ children: React.ReactNode }>) {
   const pathname = usePathname();
   return (
     <>
