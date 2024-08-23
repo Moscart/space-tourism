@@ -63,24 +63,28 @@
   }
   h2 {
     font-family: var(--font-bellefair);
-    font-size: 100px;
+    font-size: 56px;
+    line-height: normal;
   }
   h3 {
     font-family: var(--font-bellefair);
     font-size: 56px;
+    line-height: normal;
   }
   h4 {
     font-family: var(--font-bellefair);
     font-size: 18px;
+    line-height: normal;
   }
   h5 {
     font-family: var(--font-barlow-condensed);
     font-size: 16px;
     letter-spacing: 2px;
+    line-height: normal;
   }
   h6 {
     font-family: var(--font-bellefair);
-    font-size: 16px;
+    font-size: 28px;
     line-height: normal;
     @apply text-secondary;
   }
@@ -95,15 +99,20 @@
   font-family: var(--font-barlow-condensed);
   font-size: 14px;
   letter-spacing: 2px;
+  line-height: normal;
 }
 .preset-8 {
   font-family: var(--font-barlow-condensed);
   font-size: 16px;
   letter-spacing: 2px;
+  line-height: normal;
 }
 @media (min-width: 640px) {
   h1 {
     font-size: 144px;
+  }
+  h2 {
+    font-size: 80px;
   }
   h4 {
     font-size: 32px;
