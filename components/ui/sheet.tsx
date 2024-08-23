@@ -65,12 +65,12 @@ const SheetContent = React.forwardRef<
       className={cn(sheetVariants({ side }), className)}
       {...props}
     >
-      <SheetPrimitive.Close className="disabled:pointer-events-none w-10 h-10 flex justify-center items-center mb-12 mt-6 me-6 ms-auto">
+      <SheetPrimitive.Close className="disabled:pointer-events-none w-6 h-6 flex justify-center items-center mb-20 mt-8 me-8 ms-auto">
         <Image
           alt="Close"
           src={"/assets/shared/icon-close.svg"}
-          width={20}
-          height={20}
+          width={24}
+          height={24}
         />
         <span className="sr-only">Close</span>
       </SheetPrimitive.Close>
