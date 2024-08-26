@@ -68,7 +68,7 @@
   }
   h3 {
     font-family: var(--font-bellefair);
-    font-size: 56px;
+    font-size: 24px;
     line-height: normal;
   }
   h4 {
@@ -107,6 +107,9 @@
   letter-spacing: 2px;
   line-height: normal;
 }
+::-webkit-scrollbar {
+  display: none;
+}
 @media (min-width: 640px) {
   h1 {
     font-size: 144px;
@@ -114,8 +117,14 @@
   h2 {
     font-size: 80px;
   }
+  h3 {
+    font-size: 40px;
+  }
   h4 {
     font-size: 32px;
+  }
+  .grid h4 {
+    font-size: 24px;
   }
   h5 {
     font-size: 28px;
