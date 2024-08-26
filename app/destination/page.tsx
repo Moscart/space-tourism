@@ -14,12 +14,15 @@ export default function Destination() {
           <span className="font-bold text-white/40">01</span>
           {<>&nbsp;&nbsp;&nbsp;&nbsp;</>}PICK YOUR DESTINATION
         </h5>
-        <Tabs defaultValue="Moon" className="lg:grid lg:grid-cols-2 lg:gap-8">
+        <Tabs
+          defaultValue="Moon"
+          className="lg:grid lg:grid-cols-2 lg:gap-8 lg:max-w-6xl"
+        >
           {destinationData.map((destination) => (
             <TabsContent
               key={destination.name}
               value={destination.name}
-              className="hidden justify-center py-12 lg:items-center lg:py-32 lg:px-8 data-[state=active]:flex"
+              className="hidden justify-center py-12 lg:items-center lg:py-[124px] lg:px-8 data-[state=active]:flex"
             >
               <Image
                 alt="moon"
@@ -30,7 +33,7 @@ export default function Destination() {
               />
             </TabsContent>
           ))}
-          <div className="lg:px-10 lg:flex lg:flex-col lg:justify-center lg:py-32 sm:max-w-lg mx-auto">
+          <div className="lg:px-10 lg:flex lg:flex-col lg:justify-center lg:py-[124px] sm:max-w-lg lg:max-w-none mx-auto">
             <TabsList className="pt-8 pb-6 lg:justify-start lg:pb-10 lg:pt-0">
               {destinationData.map((destination) => (
                 <TabsTrigger value={destination.name} key={destination.name}>
@@ -46,7 +49,7 @@ export default function Destination() {
               >
                 <div className="grid gap-4">
                   <h2 className="uppercase">{destination.name}</h2>
-                  <p className="">{destination.description}</p>
+                  <p className="text-pretty">{destination.description}</p>
                 </div>
                 <Separator className="bg-white/15 h-[2px]" />
                 <div className="grid gap-6 sm:grid-cols-2">
