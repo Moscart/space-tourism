@@ -17,6 +17,7 @@ export default function Destination() {
         <Tabs defaultValue="Moon" className="lg:grid lg:grid-cols-2 lg:gap-8">
           {destinationData.map((destination) => (
             <TabsContent
+              key={destination.name}
               value={destination.name}
               className="hidden justify-center py-12 lg:items-center lg:py-32 lg:px-8 data-[state=active]:flex"
             >
