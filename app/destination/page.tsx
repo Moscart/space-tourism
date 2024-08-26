@@ -33,13 +33,14 @@ export default function Destination() {
           <div className="lg:px-10 lg:flex lg:flex-col lg:justify-center lg:py-32 sm:max-w-lg mx-auto">
             <TabsList className="pt-8 pb-6 lg:justify-start lg:pb-10 lg:pt-0">
               {destinationData.map((destination) => (
-                <TabsTrigger value={destination.name}>
+                <TabsTrigger value={destination.name} key={destination.name}>
                   {destination.name}
                 </TabsTrigger>
               ))}
             </TabsList>
             {destinationData.map((destination) => (
               <TabsContent
+                key={destination.name}
                 value={destination.name}
                 className="text-center grid gap-6 lg:text-left lg:gap-10"
               >
