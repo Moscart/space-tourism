@@ -50,7 +50,9 @@ export default function Crew() {
                   <div className="grid lg:flex lg:flex-col lg:gap-10 gap-6 pt-10 lg:pt-0 text-center lg:text-left">
                     <div className="grid gap-6 lg:flex-grow lg:flex lg:flex-col lg:justify-center">
                       <div className="grid gap-2 lg:gap-4">
-                        <h4 className="text-white/40 uppercase">{crew.role}</h4>
+                        <h4 className="text-white/40 uppercase tablet">
+                          {crew.role}
+                        </h4>
                         <h3 className="uppercase">{crew.name}</h3>
                       </div>
                       <p className="min-h-[164px] sm:min-h-[120px] text-pretty">

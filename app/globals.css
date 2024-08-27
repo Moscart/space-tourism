@@ -123,8 +123,7 @@
   h4 {
     font-size: 32px;
   }
-  .grid h4,
-  .border h4 {
+  h4.tablet {
     font-size: 24px;
   }
   h5 {
@@ -138,5 +137,11 @@
 @media (min-width: 1024px) {
   p {
     font-size: 18px;
+  }
+  h3 {
+    font-size: 56px;
+  }
+  h4.tablet {
+    font-size: 32px;
   }
 }

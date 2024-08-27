@@ -19,9 +19,9 @@ export default function Technology() {
         </h5>
         <Tabs
           defaultValue={technologyData[0].name}
-          className="max-w-sm sm:max-w-lg mx-auto lg:grid lg:grid-cols-2 lg:gap-8 lg:max-w-[1200px]"
+          className="max-w-sm sm:max-w-lg mx-auto lg:grid lg:grid-cols-11 lg:gap-8 lg:max-w-[1200px]"
         >
-          <div className="h-[258px] sm:h-[357px] mt-12 mb-8 lg:m-0 lg:relative lg:aspect-square lg:w-full lg:h-auto lg:my-16">
+          <div className="h-[258px] sm:h-[357px] mt-12 mb-8 lg:m-0 lg:relative lg:aspect-square lg:w-full lg:h-auto lg:my-16 lg:col-span-5">
             {technologyData.map((technology) => (
               <TabsContent
                 value={technology.name}
@@ -39,17 +39,19 @@ export default function Technology() {
               </TabsContent>
             ))}
           </div>
-          <div className="lg:col-start-1 lg:row-start-1 lg:flex lg:items-center">
+          <div className="lg:col-start-1 lg:col-span-6 lg:row-start-1 lg:flex lg:items-center">
             <div className="lg:flex lg:gap-16">
               <TabsList className="mb-10 lg:flex lg:flex-col lg:justify-start lg:mb-0">
                 {technologyData.map((technology, index) => (
                   <TabsTrigger value={technology.name} key={technology.name}>
-                    <h4>{index + 1}</h4>
+                    <h4 className="tablet">{index + 1}</h4>
                   </TabsTrigger>
                 ))}
               </TabsList>
               <div className="text-center lg:text-left">
-                <h4 className="text-white/40 mb-4">THE TERMINOLOGY...</h4>
+                <h4 className="text-white/40 mb-4 tablet">
+                  THE TERMINOLOGY...
+                </h4>
                 {technologyData.map((technology) => (
                   <TabsContent value={technology.name} key={technology.name}>
                     <h3 className="uppercase mb-4">{technology.name}</h3>
